@@ -29,10 +29,16 @@ class AnimOne extends Component {
                 <Animated.View //style={this.state.mySquare.getLayout()}
                     style={{
                         opacity:this.state.mySquare,
-                        top: this.state.mySquare.interpolate({
-                            inputRange: [0, 1],
-                            outputRange: [700, 0]
-                        })
+                        transform: [{
+                            translateY: this.state.mySquare.interpolate({
+                                inputRange: [0, 1],
+                                outputRange: [700, 0]
+                            })
+                        }],
+                        // top: this.state.mySquare.interpolate({
+                        //     inputRange: [0, 1],
+                        //     outputRange: [700, 0]
+                        // })
                     }}
                      >
                     <View style={styles.square}>
