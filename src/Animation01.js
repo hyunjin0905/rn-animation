@@ -30,9 +30,9 @@ class AnimOne extends Component {
                     style={{
                         opacity:this.state.mySquare,
                         transform: [{
-                            translateY: this.state.mySquare.interpolate({
-                                inputRange: [0, 1],
-                                outputRange: [700, 0]
+                            rotateY: this.state.mySquare.interpolate({
+                                inputRange: [0, 0.5, 1],
+                                outputRange: ['0deg', '100deg', '360deg']
                             })
                         }],
                         // top: this.state.mySquare.interpolate({
