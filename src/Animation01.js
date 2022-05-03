@@ -20,7 +20,7 @@ class AnimOne extends Component {
             toValue: 0,
             duration: 2000,
             delay:1500,
-        }).start();
+        }).start() ;
     }
 
     render() {
@@ -28,7 +28,11 @@ class AnimOne extends Component {
             <View>
                 <Animated.View //style={this.state.mySquare.getLayout()}
                     style={{
-                        opacity:this.state.mySquare
+                        opacity:this.state.mySquare,
+                        top: this.state.mySquare.interpolate({
+                            inputRange: [0, 1],
+                            outputRange: [700, 0]
+                        })
                     }}
                      >
                     <View style={styles.square}>
