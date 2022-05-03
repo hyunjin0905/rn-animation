@@ -22,12 +22,15 @@ class AnimOne extends Component {
             Animated.timing(this.state.redSquare, {
                 toValue: 0
             }),
-            Animated.timing(this.state.greenSquare, {
-                toValue: {x: 200, y: 0}
-            }),
-            Animated.timing(this.state.blueSquare, {
-                toValue: {x: 200, y: 400}
-            })
+            Animated.parallel([
+                Animated.spring(this.state.greenSquare, {
+                    toValue: {x: 200, y: 0}
+                }),
+                Animated.spring(this.state.blueSquare, {
+                    toValue: {x: 200, y: 400}
+                })
+            ])
+
         ]).start()
     }
 
