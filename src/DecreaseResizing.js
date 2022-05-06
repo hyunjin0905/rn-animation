@@ -16,7 +16,9 @@ class DecreaseResizing extends Component {
 
     }
     componentDidMount() {
-        Animated.timing(this.state.animation,{ toValue: 50, duration: 2000 ,useNativeDriver: false }).start();
+        Animated.timing(this.state.animation,
+            { toValue: 50, duration: 2000, useNativeDriver: false }
+        ).start();
     }
 
     render() {

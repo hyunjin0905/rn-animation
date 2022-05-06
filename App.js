@@ -28,7 +28,7 @@ class App extends Component {
   render() {
     return (
         <View style={styles.container}>
-          <ColorChange/>
+          <IncreaseResizing/>
         </View>
     )
   }

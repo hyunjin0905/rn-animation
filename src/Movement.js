@@ -16,7 +16,9 @@ class Movement extends Component {
 
     }
     componentDidMount() {
-        Animated.timing(this.state.animation,{ toValue: 250, duration: 2000 ,useNativeDriver: false }).start();
+        Animated.timing(this.state.animation,
+            { toValue: 250, duration: 2000 ,useNativeDriver: false }
+        ).start();
     }
 
     render() {

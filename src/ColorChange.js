@@ -16,7 +16,10 @@ class ColorChange extends Component {
 
     }
     componentDidMount() {
-        Animated.timing(this.state.animation,{ toValue: 1, duration: 3000 ,useNativeDriver: false }).start();
+        Animated.timing(
+            this.state.animation,
+            { toValue: 1, duration: 3000 ,useNativeDriver: false }
+        ).start();
     }
 
     render() {

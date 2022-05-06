@@ -16,13 +16,14 @@ class FadingInAndOut extends Component {
 
     }
     componentDidMount() {
-        Animated.timing(this.state.animation,{ toValue: 0, duration: 2000 ,useNativeDriver: false }).start();
+        Animated.timing(this.state.animation,
+            { toValue: 0, duration: 2000 ,useNativeDriver: false }
+        ).start();
     }
 
     render() {
         const animationStyles = {
             opacity: this.state.animation
-
         };
 
         return (

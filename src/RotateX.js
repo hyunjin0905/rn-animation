@@ -16,7 +16,10 @@ class RotateX extends Component {
 
     }
     componentDidMount() {
-        Animated.timing(this.state.animation,{ toValue: 1, duration: 2000 ,useNativeDriver: false }).start();
+        Animated.timing(
+            this.state.animation,
+            { toValue: 1, duration: 2000 ,useNativeDriver: false }
+        ).start();
     }
 
     render() {

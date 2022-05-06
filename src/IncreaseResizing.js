@@ -16,7 +16,9 @@ class IncreaseResizing extends Component {
 
     }
     componentDidMount() {
-        Animated.timing(this.state.animation,{ toValue: 200, duration: 2000 ,useNativeDriver: false }).start();
+        Animated.timing(
+            this.state.animation,{ toValue: 200, duration: 2000, useNativeDriver: false }
+        ).start();
     }
 
     render() {
