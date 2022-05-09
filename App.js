@@ -23,12 +23,18 @@ import Rotate from "./src/Rotate";
 import RotateY from "./src/RotateY";
 import RotateX from "./src/RotateX";
 import ColorChange from "./src/ColorChange";
+import ScaleHook from "./src/ScaleHook";
+import Spring from "./src/Spring";
+import Decay from "./src/Decay";
+import Parallel from "./src/Parallel";
+import Sequence from "./src/Sequence";
+import Stagger from "./src/Stagger";
 
 class App extends Component {
   render() {
     return (
         <View style={styles.container}>
-          <IncreaseResizing/>
+          <Stagger/>
         </View>
     )
   }
