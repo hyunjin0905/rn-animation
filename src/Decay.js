@@ -14,10 +14,10 @@ export default class Decay extends Component<Props> {
     componentDidMount(){
         Animated.decay (
             this.state.position, {
-                toValue : {x:100, y:0},
-                velocity : 1,
-                useNativeDriver: false
-            }).start();
+            toValue : {x:100, y:0},
+            velocity : 0.4,
+            useNativeDriver: false
+        }).start();
     }
 
 

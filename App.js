@@ -29,12 +29,13 @@ import Decay from "./src/Decay";
 import Parallel from "./src/Parallel";
 import Sequence from "./src/Sequence";
 import Stagger from "./src/Stagger";
+import Interpolate from "./src/Interpolate";
 
 class App extends Component {
   render() {
     return (
         <View style={styles.container}>
-          <Stagger/>
+          <Interpolate/>
         </View>
     )
   }
